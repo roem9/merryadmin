@@ -17,12 +17,17 @@ class Home_model extends MY_Model {
         $data = $this->get_one("admin", ["id_admin" => $id_admin]);
         $config = $this->get_one("config", ["field" => "background"]);
         $data['background'] = $config['value'];
+        $config = $this->get_one("config", ["field" => "no_wa"]);
+        $data['no_wa'] = $config['value'];
         return $data;
     }
 
     public function edit_pengaturan(){
         $background = $this->input->post("background");
+        $no_wa = $this->input->post("no_wa");
+        unset($_POST['no_wa']);
         unset($_POST['background']);
+        $this->edit_data("config", ["field" => "no_wa"], ["value" => $no_wa]);
         $this->edit_data("config", ["field" => "background"], ["value" => $background]);
 
         $id_admin = $this->input->post("id_admin");
@@ -39,7 +44,7 @@ class Home_model extends MY_Model {
             }
         }
         
-        if(!empty($data)) $this->edit_data("admin", ["id_admin" => $id_admin], $data);
+        if(!empty($data)) $query = $this->edit_data("admin", ["id_admin" => $id_admin], $data);
 
         return 1;
     }

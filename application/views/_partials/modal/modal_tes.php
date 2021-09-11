@@ -61,7 +61,7 @@
                             $poin = total poin, $nama = nama, $email = email, $tes = Nama Tes, $tgl_tes = Tanggal Tes, $tgl_pengumuman = Tanggal Pengumuman <br><br>
                             <b>Tes TOEFL : </b><br>
                             $nama = nama, $t4_lahir = Tempat Lahir, $tgl_lahir = Tgl Lahir, $alamat = Alamat, $no_wa = No. WA, $email = email, $jk = gende, $nilai_listening = Nilai Listening, $nilai_structure = Nilai Structure, $nilai_reading = Nilai Reading, $skor = Skor Tes,
-                            $tes = Nama Tes, $tgl_tes = Tanggal Tes, $tgl_pengumuman = Tanggal Pengumuman. <br><br>
+                            $tes = Nama Tes, $tgl_tes = Tanggal Tes, $tgl_pengumuman = Tanggal Pengumuman, $link = link wa<br><br>
                             <b>Contoh Pesan : </b><br>
                             Selamat Anda Telah Menyelesaikan $tes, Berikut Ini Data Diri Anda :<br>
                             Nama        : $nama<br>
@@ -73,6 +73,8 @@
                             Nilai Structure : $nilai_structure<br>
                             Nilai Reading   : $nilai_reading<br>
                             SKOR TOEFL      : $skor<br>
+
+                            Untuk memesan sertifikat silakan hubungi admin melalui link berikut : $link
                         </small>
                     </div>
 
@@ -151,7 +153,7 @@
                         $poin = total poin, $nama = nama, $email = email, $tes = Nama Tes, $tgl_tes = Tanggal Tes, $tgl_pengumuman = Tanggal Pengumuman <br><br>
                         <b>Tes TOEFL : </b><br>
                         $nama = nama, $t4_lahir = Tempat Lahir, $tgl_lahir = Tgl Lahir, $alamat = Alamat, $no_wa = No. WA, $email = email, $jk = gende, $nilai_listening = Nilai Listening, $nilai_structure = Nilai Structure, $nilai_reading = Nilai Reading, $skor = Skor Tes,
-                        $tes = Nama Tes, $tgl_tes = Tanggal Tes, $tgl_pengumuman = Tanggal Pengumuman. <br><br>
+                        $tes = Nama Tes, $tgl_tes = Tanggal Tes, $tgl_pengumuman = Tanggal Pengumuman, $link = link<br><br>
                         <b>Contoh Pesan : </b><br>
                         Selamat Anda Telah Menyelesaikan $tes, Berikut Ini Data Diri Anda :<br>
                         Nama        : $nama<br>
@@ -163,6 +165,8 @@
                         Nilai Structure : $nilai_structure<br>
                         Nilai Reading   : $nilai_reading<br>
                         SKOR TOEFL      : $skor<br>
+
+                        Untuk memesan sertifikat silakan hubungi admin melalui link berikut : $link
                     </small>
                 </div>
             </div>

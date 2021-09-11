@@ -20,6 +20,10 @@
                     <input type="color" name="background" class="form form-control required">
                     <label>Warna Background</label>
                 </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="no_wa" class="form form-control required number">
+                    <label>No WA</label>
+                </div>
             </div>
             <div class="modal-footer">
                 <div class="d-flex justify-content-end">

@@ -5,6 +5,7 @@ $(".pengaturanAkun").click(function(){
     $(form+" [name='id_admin']").val(result.id_admin);
     $(form+" [name='background']").val(result.background);
     $(form+" [name='username']").val(result.username);
+    $(form+" [name='no_wa']").val(result.no_wa);
     $(form+" [name='password']").val("");
 })
 
@@ -19,8 +20,10 @@ $("#pengaturanAkun .btnEdit").click(function(){
     }).then(function (result) {
         if (result.value) {
             let form = "#pengaturanAkun";
+            let id_admin = $(form+" [name='id_admin']").val();
             let background = $(form+" [name='background']").val();
             let password = $(form+" [name='password']").val();
+            let no_wa = $(form+" [name='no_wa']").val();
             
             let eror = required(form);
             
@@ -31,10 +34,9 @@ $("#pengaturanAkun .btnEdit").click(function(){
                     text: 'lengkapi isi form terlebih dahulu'
                 })
             } else {
-                data = {background: background, password: password}
+                data = {id_admin: id_admin, background: background, password: password, no_wa: no_wa}
                 let result = ajax(url_base+"home/edit_pengaturan", "POST", data);
 
-                console.log(result)
                 $(form+" [name='password']").val("");
                 if(result == 1){
                     Swal.fire({
