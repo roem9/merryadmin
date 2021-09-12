@@ -49,8 +49,8 @@
         .qrcode{
             width: 210px;
 			position: absolute;
-            left: 70px;
-			bottom: 30px;
+            left: 44px;
+			bottom: 40px;
             font-size: 35px;
             word-spacing: 3px;
         }
@@ -60,7 +60,7 @@
             width: 600px;
 			position: absolute;
             left: 100px;
-			top: 190px;
+			top: 200px;
             font-size: 26px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -70,9 +70,9 @@
             /* background-color: red; */
             width: 600px;
 			position: absolute;
-            left: 100px;
-			top: 225px;
-            font-size: 15px;
+            left: 165px;
+			top: 238px;
+            font-size: 16px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -93,9 +93,9 @@
             /* background-color: yellow; */
             width: 120px;
 			position: absolute;
-            left: 145px;
-			top: 357px;
-            font-size: 15px;
+            left: 450px;
+			top: 328px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -104,9 +104,9 @@
             /* background-color: blue; */
             width: 120px;
 			position: absolute;
-            left: 270px;
-			top: 357px;
-            font-size: 15px;
+            left: 450px;
+			top: 349px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -115,20 +115,20 @@
             /* background-color: red; */
             width: 120px;
 			position: absolute;
-            left: 403px;
-			top: 357px;
-            font-size: 15px;
+            left: 450px;
+			top: 369px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
         
         .nilai{
-            /* background-color: red; */
+            /* background-color: green; */
             width: 120px;
 			position: absolute;
-            left: 527px;
-			top: 357px;
-            font-size: 15px;
+            left: 450px;
+			top: 388px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -136,9 +136,9 @@
         .tgl{
             /* background-color: red; */
 			position: absolute;
-            left: 283px;
-			bottom: 144px;
-            font-size: 15px;
+            left: 254px;
+			bottom: 61px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -146,9 +146,9 @@
         .tgl_akhir{
             /* background-color: red; */
 			position: absolute;
-            left: 487px;
-			bottom: 147px;
-            font-size: 15px;
+            left: 254px;
+			bottom: 43px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -156,9 +156,9 @@
         .tgl_tes{
             /* background-color: red; */
 			position: absolute;
-            left: 601px;
-			bottom: 116px;
-            font-size: 15px;
+            left: 606px;
+			bottom: 109px;
+            font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -168,8 +168,8 @@
             width: 200px;
 			position: absolute;
             left: 380px;
-			top: 169px;
-            font-size: 14px;
+			top: 148px;
+            font-size: 13px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -213,18 +213,18 @@
 </head>
     <body style="text-align: center">
         <div class="qrcode">
-            <img src="<?= base_url()?>assets/qrcode/<?= $id?>.png" width=110 alt="">
+            <img src="<?= base_url()?>assets/qrcode/<?= $id?>.png" width=135 alt="">
         </div>
-        <div class="nilai"><p style="text-align: center; margin: 0px"><b><?= round($skor)?></b></p></div>
-        <div class="nama"><p style="text-align: center; margin: 0px"><b><?= $nama?></b></p></div>
+        <div class="nilai"><p style="text-align: right; margin: 0px"><b><?= round($skor)?></b></p></div>
+        <div class="nama"><p style="text-align: center; margin: 0px"><b><u><?= $nama?></u></b></p></div>
         <div class="ttl"><p style="text-align: center; margin: 0px"><b><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_lahir)))?></b></p></div>
         <div class="t4"><p style="text-align: center; margin: 0px;"><?= $t4_lahir?></p></div>
         <!-- <div class="gender"><p style="text-align: center; margin: 0px"><?= $jk?></p></div>
         <div class="country"><p style="text-align: center; margin: 0px"><?= $country?></p></div>
         <div class="language"><p style="text-align: center; margin: 0px"><?= $language?></p></div> -->
-        <div class="listening"><p style="text-align: center; margin: 0px"><b><?= $listening?></b></p></div>
-        <div class="structure"><p style="text-align: center; margin: 0px"><b><?= $structure?></b></p></div>
-        <div class="reading"><p style="text-align: center; margin: 0px"><b><?= $reading?></b></p></div>
+        <div class="listening"><p style="text-align: right; margin: 0px"><b><?= $listening?></b></p></div>
+        <div class="structure"><p style="text-align: right; margin: 0px"><b><?= $structure?></b></p></div>
+        <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
         <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime($tgl_tes))?></p></div>
         <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div>
