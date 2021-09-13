@@ -285,6 +285,7 @@ $(document).on("click", "#addItem .btnAdd", function(){
                 pilihan = pilihan.slice(0, -1)
 
                 let jawaban = $(form+" textarea[name='jawaban']").val();
+                jawaban = jawaban.replace(/"/g, '&quot;');
                 let penulisan = $(form+" select[name='penulisan']").val();
     
                 let eror = required(form);
@@ -677,6 +678,7 @@ $(document).on("click", "#editItem .btnEdit", function(){
                 pilihan = pilihan.slice(0, -1)
 
                 let jawaban = $(form+" textarea[name='jawaban']").val();
+                jawaban = jawaban.replace(/"/g, '&quot;');
                 let penulisan = $(form+" select[name='penulisan']").val();
     
                 let eror = required(form);
