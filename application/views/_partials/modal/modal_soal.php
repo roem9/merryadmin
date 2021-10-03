@@ -1,4 +1,4 @@
-<div class="modal modal-blur fade" id="addSoal" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal modal-blur fade" id="addSoal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -44,7 +44,7 @@
     </div>
 </div>
 
-<div class="modal modal-blur fade" id="editSoal" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal modal-blur fade" id="editSoal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -89,7 +89,7 @@
     </div>
 </div>
 
-<div class="modal modal-blur fade" id="komponenSoal" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal modal-blur fade" id="komponenSoal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">

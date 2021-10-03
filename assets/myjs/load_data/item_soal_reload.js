@@ -24,7 +24,7 @@ function load_item(id){
                                     <div class="text-right" dir="rtl">
                                         <label>
                                             <input type="radio" `+checked+`>
-                                            `+data_pilihan+`
+                                            <span>`+data_pilihan+`</span>
                                         </label>
                                     </div>
                                 </div>
@@ -45,7 +45,7 @@ function load_item(id){
                                 <div class="form-check p-0">
                                     <label>
                                         <input type="radio" `+checked+`>
-                                        `+data_pilihan+`
+                                        <span>`+data_pilihan+`</span>
                                     </label>
                                 </div>
                             </div>`
@@ -67,9 +67,13 @@ function load_item(id){
 
                 item = `<center><audio controls controlsList="nodownload"><source src="`+url_base+`assets/myaudio/`+data.data+`?t=`+Math.random()+`" type='audio/mpeg'></audio></center>`
 
+            } else if(data.item == "gambar"){
+
+                item = `<img src="`+url_base+`assets/myimg/`+data.data+`?t=`+Math.random()+`" onerror="this.onerror=null; this.src='`+url_base+`assets/tabler-icons-1.39.1/icons/x.svg'" class="card-img-top" width=100%>`
+
             }
 
-            if(data.item == 'audio'){
+            if(data.item == 'audio' || data.item == 'gambar'){
                 edit = '';
             } else {
                 edit = `
