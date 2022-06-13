@@ -49,8 +49,8 @@
         .qrcode{
             width: 210px;
 			position: absolute;
-            left: 44px;
-			bottom: 40px;
+            left: 110px;
+			bottom: 25px;
             font-size: 35px;
             word-spacing: 3px;
         }
@@ -70,7 +70,7 @@
             /* background-color: red; */
             width: 600px;
 			position: absolute;
-            left: 165px;
+            left: 100px;
 			top: 238px;
             font-size: 16px;
             font-family: 'Roboto', sans-serif;
@@ -94,7 +94,7 @@
             width: 120px;
 			position: absolute;
             left: 450px;
-			top: 328px;
+			top: 314px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -105,7 +105,7 @@
             width: 120px;
 			position: absolute;
             left: 450px;
-			top: 349px;
+			top: 342px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -116,7 +116,7 @@
             width: 120px;
 			position: absolute;
             left: 450px;
-			top: 369px;
+			top: 368px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -127,7 +127,7 @@
             width: 120px;
 			position: absolute;
             left: 450px;
-			top: 388px;
+			top: 395px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -136,8 +136,18 @@
         .tgl{
             /* background-color: red; */
 			position: absolute;
-            left: 254px;
-			bottom: 61px;
+            left: 300px;
+			bottom: 26px;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            word-spacing: 3px;
+        }
+
+        .tgl-2{
+            /* background-color: red; */
+			position: absolute;
+            left: 600px;
+			bottom: 118px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -168,7 +178,7 @@
             width: 200px;
 			position: absolute;
             left: 380px;
-			top: 148px;
+			top: 162px;
             font-size: 13px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -213,7 +223,7 @@
 </head>
     <body style="text-align: center">
         <div class="qrcode">
-            <img src="<?= base_url()?>assets/qrcode/<?= $id?>.png" width=135 alt="">
+            <img src="<?= base_url()?>assets/qrcode/<?= $id?>.png" width=120 alt="">
         </div>
         <div class="nilai"><p style="text-align: right; margin: 0px"><b><?= round($skor)?></b></p></div>
         <div class="nama"><p style="text-align: center; margin: 0px"><b><u><?= $nama?></u></b></p></div>
@@ -226,8 +236,9 @@
         <div class="structure"><p style="text-align: right; margin: 0px"><b><?= $structure?></b></p></div>
         <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
-        <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime($tgl_tes))?></p></div>
-        <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div>
-        <div class="tgl_tes"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_tes)))?></p></div>
+        <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d-m-y", strtotime($tgl_tes))?></p></div>
+        <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-y", strtotime($tgl_tes)))?></p></div>
+        <!-- <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div>
+        <div class="tgl_tes"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_tes)))?></p></div> -->
     </body>
 </html>
