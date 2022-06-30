@@ -291,17 +291,21 @@ $(document).on("click", "#addItem .btnAdd", function(){
                 let soal = CKEDITOR.instances['form-text'].getData();
                 soal = soal.replace(/"/g, "'");
                 let pilihan = "";
-
                 $(form+" [name='pilihan[]']").each(function(){
-                    if($(this).val() != ""){
-                        pilihan += `"`+$(this).val()+`",`;
-                    }
+                    // tambahan
+                    pilihan_jawaban = $(this).val().replace(/"/g, "&quot;")
+                    pilihan += `"`+pilihan_jawaban+`",`;
+                    // tambahan
+                    // pilihan += `"`+$(this).val()+`",`;
                 });
 
                 // remove last character 
                 pilihan = pilihan.slice(0, -1)
 
                 let jawaban = $(form+" textarea[name='jawaban']").val();
+                // tambahan
+                jawaban = jawaban.replace(/"/g, "&quot;");
+                // tambahan
                 let penulisan = $(form+" select[name='penulisan']").val();
     
                 let eror = required(form);
@@ -767,14 +771,19 @@ $(document).on("click", "#editItem .btnEdit", function(){
                 
                 let pilihan = "";
                 $(form+" [name='pilihan[]']").each(function(){
-                    if($(this).val() != ""){
-                        pilihan += `"`+$(this).val()+`",`;
-                    }
+                    // tambahan
+                    pilihan_jawaban = $(this).val().replace(/"/g, "&quot;")
+                    pilihan += `"`+pilihan_jawaban+`",`;
+                    // tambahan
+                    // pilihan += `"`+$(this).val()+`",`;
                 });
                 // remove last character 
                 pilihan = pilihan.slice(0, -1)
 
                 let jawaban = $(form+" textarea[name='jawaban']").val();
+                // tambahan
+                jawaban = jawaban.replace(/"/g, "&quot;");
+                // tambahan
                 let penulisan = $(form+" select[name='penulisan']").val();
     
                 let eror = required(form);
