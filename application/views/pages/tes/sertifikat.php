@@ -49,8 +49,8 @@
         .qrcode{
             width: 210px;
 			position: absolute;
-            left: 110px;
-			bottom: 25px;
+            left: 25px;
+			bottom: 60px;
             font-size: 35px;
             word-spacing: 3px;
         }
@@ -93,7 +93,7 @@
             /* background-color: yellow; */
             width: 120px;
 			position: absolute;
-            left: 450px;
+            left: 420px;
 			top: 314px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
@@ -104,7 +104,7 @@
             /* background-color: blue; */
             width: 120px;
 			position: absolute;
-            left: 450px;
+            left: 420px;
 			top: 342px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
@@ -115,7 +115,7 @@
             /* background-color: red; */
             width: 120px;
 			position: absolute;
-            left: 450px;
+            left: 420px;
 			top: 368px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
@@ -126,7 +126,7 @@
             /* background-color: green; */
             width: 120px;
 			position: absolute;
-            left: 450px;
+            left: 420px;
 			top: 395px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
@@ -136,8 +136,8 @@
         .tgl{
             /* background-color: red; */
 			position: absolute;
-            left: 300px;
-			bottom: 26px;
+            left: 395px;
+			bottom: 23px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -146,8 +146,8 @@
         .tgl-2{
             /* background-color: red; */
 			position: absolute;
-            left: 600px;
-			bottom: 118px;
+            left: 629px;
+			bottom: 126px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -177,7 +177,7 @@
             /* background-color: red; */
             width: 200px;
 			position: absolute;
-            left: 380px;
+            left: 370px;
 			top: 162px;
             font-size: 13px;
             font-family: 'Roboto', sans-serif;
@@ -223,7 +223,7 @@
 </head>
     <body style="text-align: center">
         <div class="qrcode">
-            <img src="<?= base_url()?>assets/qrcode/<?= $id?>.png" width=120 alt="">
+            <img src="<?= base_url()?>assets/qrcode/<?= $id?>.png" width=140 alt="">
         </div>
         <div class="nilai"><p style="text-align: right; margin: 0px"><b><?= round($skor)?></b></p></div>
         <div class="nama"><p style="text-align: center; margin: 0px"><b><u><?= $nama?></u></b></p></div>
