@@ -49,7 +49,7 @@
         .qrcode{
             width: 210px;
 			position: absolute;
-            left: 25px;
+            left: 60px;
 			bottom: 60px;
             font-size: 35px;
             word-spacing: 3px;
@@ -60,8 +60,8 @@
             width: 600px;
 			position: absolute;
             left: 100px;
-			top: 200px;
-            font-size: 26px;
+			top: 210px;
+            font-size: 30px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -71,7 +71,7 @@
             width: 600px;
 			position: absolute;
             left: 100px;
-			top: 238px;
+			top: 248px;
             font-size: 16px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -94,7 +94,7 @@
             width: 120px;
 			position: absolute;
             left: 420px;
-			top: 314px;
+			top: 363px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -105,7 +105,7 @@
             width: 120px;
 			position: absolute;
             left: 420px;
-			top: 342px;
+			top: 388px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -116,7 +116,7 @@
             width: 120px;
 			position: absolute;
             left: 420px;
-			top: 368px;
+			top: 414px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -127,7 +127,7 @@
             width: 120px;
 			position: absolute;
             left: 420px;
-			top: 395px;
+			top: 439px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -136,9 +136,9 @@
         .tgl{
             /* background-color: red; */
 			position: absolute;
-            left: 395px;
-			bottom: 23px;
-            font-size: 14px;
+            left: 384px;
+			bottom: 74px;
+            font-size: 10px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -146,8 +146,8 @@
         .tgl-2{
             /* background-color: red; */
 			position: absolute;
-            left: 629px;
-			bottom: 126px;
+            left: 618px;
+			bottom: 171px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -178,39 +178,9 @@
             width: 200px;
 			position: absolute;
             left: 370px;
-			top: 162px;
-            font-size: 13px;
+			top: 144px;
+            font-size: 12px;
             font-family: 'Roboto', sans-serif;
-            word-spacing: 3px;
-        }
-
-        .gender{
-            width: 129px;
-			position: absolute;
-            left: 373px;
-			top: 407px;
-            font-size: 18px;
-            font-family: 'rock';
-            word-spacing: 3px;
-        }
-
-        .country{
-            width: 129px;
-			position: absolute;
-            left: 631px;
-			top: 407px;
-            font-size: 18px;
-            font-family: 'rock';
-            word-spacing: 3px;
-        }
-
-        .language{
-            width: 129px;
-			position: absolute;
-            right: 210px;
-			top: 407px;
-            font-size: 18px;
-            font-family: 'rock';
             word-spacing: 3px;
         }
 
@@ -229,16 +199,11 @@
         <div class="nama"><p style="text-align: center; margin: 0px"><b><u><?= $nama?></u></b></p></div>
         <div class="ttl"><p style="text-align: center; margin: 0px"><b><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_lahir)))?></b></p></div>
         <div class="t4"><p style="text-align: center; margin: 0px;"><?= $t4_lahir?></p></div>
-        <!-- <div class="gender"><p style="text-align: center; margin: 0px"><?= $jk?></p></div>
-        <div class="country"><p style="text-align: center; margin: 0px"><?= $country?></p></div>
-        <div class="language"><p style="text-align: center; margin: 0px"><?= $language?></p></div> -->
         <div class="listening"><p style="text-align: right; margin: 0px"><b><?= $listening?></b></p></div>
         <div class="structure"><p style="text-align: right; margin: 0px"><b><?= $structure?></b></p></div>
         <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
         <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d-m-y", strtotime($tgl_tes))?></p></div>
         <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-y", strtotime($tgl_tes)))?></p></div>
-        <!-- <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div>
-        <div class="tgl_tes"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_tes)))?></p></div> -->
     </body>
 </html>
