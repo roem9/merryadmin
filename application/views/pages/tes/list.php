@@ -34,7 +34,7 @@
                 <div class="container-xl">
                     <div class="card shadow mb-4">
                         <div class="card-body">
-                            <table id="dataTable" class="responsive table card-table table-vcenter text-nowrap text-dark">
+                            <table id="dataTable" class="responsive table card-table table-vcenter text-dark">
                                 <thead>
                                     <tr>
                                         <th class="text-dark desktop mobile-l mobile-p tablet-l tablet-p" style="font-size: 11px">Nama Tes</th>
