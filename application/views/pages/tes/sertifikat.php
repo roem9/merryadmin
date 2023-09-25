@@ -146,9 +146,10 @@
         .tgl-2{
             /* background-color: red; */
 			position: absolute;
-            left: 618px;
-			bottom: 171px;
-            font-size: 14px;
+            /* left: 558px; */
+            left: 613px;
+			bottom: 170.5px;
+            font-size: 13px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -197,13 +198,14 @@
         </div>
         <div class="nilai"><p style="text-align: right; margin: 0px"><b><?= round($skor)?></b></p></div>
         <div class="nama"><p style="text-align: center; margin: 0px"><b><u><?= $nama?></u></b></p></div>
-        <div class="ttl"><p style="text-align: center; margin: 0px"><b><?= $t4_lahir?>, <?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_lahir)))?></b></p></div>
+        <div class="ttl"><p style="text-align: center; margin: 0px"><b><?= $t4_lahir?>, <?= date("d F Y", strtotime($tgl_lahir))?></b></p></div>
         <!-- <div class="t4"><p style="text-align: center; margin: 0px;"><?= $t4_lahir?></p></div> -->
         <div class="listening"><p style="text-align: right; margin: 0px"><b><?= $listening?></b></p></div>
         <div class="structure"><p style="text-align: right; margin: 0px"><b><?= $structure?></b></p></div>
         <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
         <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d-m-y", strtotime($tgl_tes))?></p></div>
-        <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-y", strtotime($tgl_tes)))?></p></div>
+        <!-- <div class="tgl-2"><p style="text-align: center; margin: 0px">Kediri, <?= date("d F Y", strtotime($tgl_tes))?></p></div> -->
+        <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= date("d F Y", strtotime($tgl_tes))?></p></div>
     </body>
 </html>
