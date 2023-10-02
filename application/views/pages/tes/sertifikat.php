@@ -147,8 +147,8 @@
             /* background-color: red; */
 			position: absolute;
             /* left: 558px; */
-            left: 613px;
-			bottom: 170.5px;
+            left: 600px;
+			bottom: 170.8px;
             font-size: 13px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
