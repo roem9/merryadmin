@@ -207,12 +207,12 @@ class Tes extends MY_Controller {
         $tes = $this->tes->get_one("tes", ["id_tes" => $peserta['id_tes']]);
         $peserta['nama'] = $peserta['nama'];
         $peserta['t4_lahir'] = ucwords(strtolower($peserta['t4_lahir']));
-        $peserta['tahun'] = date('y', strtotime($tes['tgl_tes']));
-        $peserta['bulan'] = getRomawi(date('m', strtotime($tes['tgl_tes'])));
+        $peserta['tahun'] = date('y', strtotime($peserta['tgl_tes_peserta']));
+        $peserta['bulan'] = getRomawi(date('m', strtotime($peserta['tgl_tes_peserta'])));
         $peserta['listening'] = poin("Listening", $peserta['nilai_listening']);
         $peserta['structure'] = poin("Structure", $peserta['nilai_structure']);
         $peserta['reading'] = poin("Reading", $peserta['nilai_reading']);
-        $peserta['tgl_tes'] = $tes['tgl_tes'];
+        $peserta['tgl_tes'] = $peserta['tgl_tes_peserta'];
 
         $skor = ((poin("Listening", $peserta['nilai_listening']) + poin("Structure", $peserta['nilai_structure']) + poin("Reading", $peserta['nilai_reading'])) * 10) / 3;
         $peserta['skor'] = $skor;

@@ -205,10 +205,10 @@
         <div class="structure"><p style="text-align: right; margin: 0px"><b><?= $structure?></b></p></div>
         <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
-        <!-- <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d-m-y", strtotime($tgl_tes))?></p></div> -->
-        <div class="tgl"><p style="text-align: center; margin: 0px"><?= format_tanggal($tgl_tes)?></p></div>
-        <!-- <div class="tgl-2"><p style="text-align: center; margin: 0px">Kediri, <?= date("d F Y", strtotime($tgl_tes))?></p></div> -->
-        <!-- <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= date("d F Y", strtotime($tgl_tes))?></p></div> -->
-        <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= format_tanggal($tgl_tes)?></p></div>
+        <!-- <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d-m-y", strtotime($tgl_tes_peserta))?></p></div> -->
+        <div class="tgl"><p style="text-align: center; margin: 0px"><?= format_tanggal($tgl_tes_peserta)?></p></div>
+        <!-- <div class="tgl-2"><p style="text-align: center; margin: 0px">Kediri, <?= date("d F Y", strtotime($tgl_tes_peserta))?></p></div> -->
+        <!-- <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= date("d F Y", strtotime($tgl_tes_peserta))?></p></div> -->
+        <div class="tgl-2"><p style="text-align: center; margin: 0px"><?= format_tanggal($tgl_tes_peserta)?></p></div>
     </body>
 </html>
